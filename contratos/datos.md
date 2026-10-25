@@ -26,7 +26,7 @@ bbox `[-3.75, 40.38, -3.64, 40.46]`, H3 resolución 9.
     {"id": "s2", "name": "Sentinel-2 L2A NDVI", "kind": "raster-timeseries", "synthetic": true},
     {"id": "lst", "name": "Landsat 8/9 LST", "kind": "raster-timeseries", "synthetic": true},
     {"id": "ine", "name": "INE padrón + vulnerabilidad", "kind": "tabular", "synthetic": true},
-    {"id": "smartsteps", "name": "Telefónica Tech Smart Steps", "kind": "mobility", "synthetic": true}
+    {"id": "smartsteps", "name": "Movilidad agregada de operador (sintético, tipo Smart Steps)", "kind": "mobility", "synthetic": true}
   ],
   "metrics": {"auc": 0.0, "f1_at_critical": 0.0, "mae_forecast_ndvi": 0.0, "n_cells": 0, "n_proposals": 0},
   "feature_labels": {"green_m2_per_capita": "m² verde/hab", "...": "..."}

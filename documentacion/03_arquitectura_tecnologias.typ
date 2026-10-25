@@ -1,4 +1,4 @@
-#import "tema/telefonica.typ": *
+#import "tema/verdescope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(

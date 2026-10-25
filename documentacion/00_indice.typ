@@ -1,4 +1,4 @@
-#import "tema/telefonica.typ": *
+#import "tema/verdescope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -11,10 +11,10 @@
 
 *VerdeScope* es una aplicación web de apoyo a la decisión que detecta zonas urbanas con déficit de verde, explica por qué, vigila su evolución y *propone parques de bolsillo* priorizados. El técnico municipal fija los umbrales y decide —aprueba, rechaza o ajusta— cada propuesta; cada decisión queda auditada y mejora el modelo. El piloto es *Madrid* (distritos centrales) y la demo es desplegable como sitio estático en GitHub Pages.
 
-== Por qué ahora y por qué Telefónica Tech
+== Por qué ahora y por qué la fusión de datos
 
 - #dato[Según ISGlobal, el 84 % de la población de Madrid no tiene un espacio verde de más de 0,5 ha a 300 m.] Existen herramientas para medir el verde (3-30-300, cobertura arbórea), pero ninguna de las analizadas prioriza y propone intervenciones con decisión humana y demanda real (documento 01).
-- *Data fusion:* observación terrestre + OSM/catastro + padrón + *Smart Steps* (población flotante agregada y anonimizada). Es la ventaja diferencial de Telefónica Tech (documento 02).
+- *Data fusion:* observación terrestre + OSM/catastro + padrón + *Smart Steps* (población flotante agregada y anonimizada). Es la ventaja diferencial de la propuesta (documento 02).
 - *Rigor metodológico:* CRISP-ML(Q), series temporales (STL, Theil-Sen, Holt-Winters), LightGBM + SHAP, active learning (documento 04).
 
 #figura(

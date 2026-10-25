@@ -1,4 +1,4 @@
-#import "tema/telefonica.typ": *
+#import "tema/verdescope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -54,7 +54,7 @@ VerdeScope se entrega en dos configuraciones con el mismo dominio: una *demo est
     nodo((0, 0), [Técnicos y\ planificadores], tono: "claro"),
     nodo((1, 0), [CDN + WAF], tono: "azul"),
     nodo((2, 0), [Ingress + IAM\ (OIDC)], tono: "azul"),
-    contenedor(((1, 1), (3, 2)), "Kubernetes (Telefónica Cloud / hyperscaler)", tono: "gris"),
+    contenedor(((1, 1), (3, 2)), "Kubernetes (cloud pública o soberana)", tono: "gris"),
     nodo((1, 1), [Web estática\ (pods Nginx)], tono: "claro"),
     nodo((2, 1), [API FastAPI\ (autoescalado)], tono: "claro"),
     nodo((3, 1), [Workers batch\ (inferencia)], tono: "claro"),

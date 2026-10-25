@@ -263,7 +263,7 @@ class SyntheticSmartStepsSource:
     """Población flotante sintética: alta en Sol, Gran Vía y Castellana."""
 
     id = "smartsteps"
-    name = "Telefónica Tech Smart Steps"
+    name = "Movilidad agregada de operador (sintético, tipo Smart Steps)"
     kind = "mobility"
     synthetic = True
 

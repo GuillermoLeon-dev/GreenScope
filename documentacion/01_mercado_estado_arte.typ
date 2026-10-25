@@ -1,15 +1,15 @@
-#import "tema/telefonica.typ": *
+#import "tema/verdescope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
   titulo: "Mercado y estado del arte",
   subtitulo: "Contexto, competidores y ciencia aplicada al déficit de verde urbano",
-  version: "0.3", fecha: "25 de octubre de 2026",
+  version: "0.4", fecha: "25 de octubre de 2026",
 )
 
 = Resumen y criterio de lectura
 
-Este documento sitúa VerdeScope en su contexto: por qué el déficit de verde urbano es un problema medible, qué herramientas existen hoy, qué ha demostrado la investigación reciente y dónde queda un hueco de mercado que Telefónica Tech está en condiciones de ocupar.
+Este documento sitúa VerdeScope en su contexto: por qué el déficit de verde urbano es un problema medible, qué herramientas existen hoy, qué ha demostrado la investigación reciente y dónde queda un hueco de mercado que una solución con fusión de datos puede ocupar.
 
 #nota[
   *Convención de veracidad.* #tag-verificado indica una cifra o afirmación procedente de una fuente pública enlazada en las referencias. #tag-estimado indica una valoración propia del equipo (la comparativa de capacidades se basa en la documentación pública de cada producto, no en pruebas de uso). La atribución fina de cada métrica científica a su artículo debe revisarse contra la fuente original antes de citarla fuera de la organización.
@@ -116,7 +116,7 @@ Leyenda: círculo lleno = cubre de forma nativa · círculo claro = parcial o in
   *Hueco identificado.* Ninguna solución analizada integra a la vez: _(a)_ detección a nivel de manzana, _(b)_ vigilancia temporal del verde, _(c)_ propuestas de intervención priorizadas y explicadas, _(d)_ decisión humana auditada guiada por umbrales y _(e)_ demanda real a partir de movilidad agregada. VerdeScope se diseña como producto de _apoyo a la decisión_ —no de automatización total— para el técnico municipal.
 ]
 
-La ventaja diferencial de Telefónica Tech es el acceso a *Smart Steps*, datos de movilidad anonimizados y agregados. #dato[Telefónica Tech aplica Smart Steps en proyectos municipales, p. ej. con el Ayuntamiento de Xàtiva (nota de prensa, 2025) [10].] Esa señal permite estimar *población flotante diurna* (quién usa realmente cada zona), que ni el padrón ni la imagen satelital capturan.
+La ventaja diferencial propuesta es integrar *datos de movilidad de operador*, anonimizados y agregados, como los que comercializa Telefónica Tech con *Smart Steps*. #dato[Telefónica Tech aplica Smart Steps en proyectos municipales, p. ej. con el Ayuntamiento de Xàtiva (nota de prensa, 2025) [10].] Esa señal permite estimar *población flotante diurna* (quién usa realmente cada zona), que ni el padrón ni la imagen satelital capturan.
 
 = Estado del arte científico
 
@@ -125,10 +125,10 @@ La ventaja diferencial de Telefónica Tech es el acceso a *Smart Steps*, datos d
   [Línea], [Resultado relevante], [Implicación para VerdeScope],
   [Segmentación en Sentinel-2 (U-Net, ResNet)], [Modelo híbrido U-Net + ResNet-50 en 16 ciudades: ≈ 90 % de acierto identificando espacios verdes, pero *fallos en parches pequeños* [8].], [Los parques de bolsillo son justamente parches pequeños: combinar NDVI con OSM y catastro y reservar la imagen de muy alta resolución para validar.],
   [Park-NET], [U-Net y U-Net/ResNet-34 sobre Sentinel-2 para parques públicos: IoU medio de test ≈ 0,56 [9].], [Un IoU moderado aconseja usar la segmentación como _señal_ y no como verdad: de ahí el modelo de déficit con incertidumbre.],
-  [CNN + active learning sobre street view (Nanjing, 2024)], [CNN + aprendizaje activo sobre imágenes de calle para identificar emplazamientos potenciales de parques de bolsillo [13].], [Respalda el *bucle de decisiones del técnico → etiquetas* como active learning.],
-  [F-AHP para idoneidad (Nanjing)], [F-AHP + SIG para ubicar parques urbanos: almacenamiento de carbono, NDVI e isla de calor como factores de mayor peso [12].], [Inspira el *ranking multicriterio* explícito con pesos configurables.],
+  [CNN + active learning sobre street view (Nanjing, 2024)], [CNN + aprendizaje activo sobre imágenes de calle para identificar emplazamientos potenciales de parques de bolsillo [12].], [Respalda el *bucle de decisiones del técnico → etiquetas* como active learning.],
+  [F-AHP para idoneidad (Nanjing)], [F-AHP + SIG para ubicar parques urbanos: almacenamiento de carbono, NDVI e isla de calor como factores de mayor peso [11].], [Inspira el *ranking multicriterio* explícito con pesos configurables.],
   [ML interpretable (Shenzhen, 2025)], [Potencial y selección de emplazamientos de parques con ML interpretable (Li y He, 2025); métodos no contrastados en detalle.], [Justifica LightGBM + SHAP como estándar de explicabilidad.],
-  [Foundation models (Prithvi-EO-2.0, Clay)], [Modelos preentrenados multitemporales sobre HLS (Harmonized Landsat Sentinel-2) para segmentación y clasificación [14].], [Ruta de producción: reutilizar embeddings en lugar de entrenar desde cero (menos coste y huella).],
+  [Foundation models (Prithvi-EO-2.0, Clay)], [Modelos preentrenados multitemporales sobre HLS (Harmonized Landsat Sentinel-2) para segmentación y clasificación [13].], [Ruta de producción: reutilizar embeddings en lugar de entrenar desde cero (menos coste y huella).],
   [Earth embeddings], [Representaciones densas por píxel/celda listas para consulta y búsqueda por similitud.], [Permiten escalar a ciudades nuevas sin etiquetas propias.],
 )
 
@@ -171,7 +171,6 @@ La ventaja diferencial de Telefónica Tech es el acceso a *Smart Steps*, datos d
 + _AI models for detecting urban green spaces: a multi-city and multi-country contexts approach_ (Universiteit Utrecht, 2026). #link("https://utrecht-main-test.atmire.com/items/eabaf7c4-848b-4937-b768-7a2e01e1aafd")
 + _Park-NET: identifying urban parks using multi-source spatial data and Geo-AI_ (tesis, Universiteit Utrecht). #link("https://studenttheses.uu.nl/handle/20.500.12932/42864")
 + Telefónica Tech. _Smart Steps con el Ayuntamiento de Xàtiva_ (nota de prensa, agosto de 2025). #link("https://www.telefonica.es/es/wp-content/uploads/sites/10/2025/08/2025.08.06-NdP-Smart-Steps-Telefonica-Tech-Ayuntamiento-de-Xativa-002.pdf")
-+ TypeType. _Customization of TT Hoves for the legendary brand Telefónica_ (tipografía corporativa). #link("https://typetype.org/es/blog/customization-of-tt-hoves-for-the-legendary-brand-telefonica")
 + _Site Selection of Urban Parks Based on Fuzzy-Analytic Hierarchy Process (F-AHP): A Case Study of Nanjing, China_ (PMC9603808). #link("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9603808/")
 + Zhou et al. (2024), CNN y aprendizaje activo para emplazamientos de parques de bolsillo (Nanjing), _Journal of Urban Technology_ 31(4-5). #link("https://ideas.repec.org/a/taf/cjutxx/v31y2024i4-5p191-217.html")
 + Szwarcman et al. (2024). _Prithvi-EO-2.0: A Versatile Multi-Temporal Foundation Model for Earth Observation Applications_. #link("https://arxiv.org/abs/2412.02732")
@@ -180,5 +179,6 @@ La ventaja diferencial de Telefónica Tech es el acceso a *Smart Steps*, datos d
 #historial((
   ("0.1", "25-10-2026", "Resumen del estudio de mercado incluido en el plan inicial."),
   ("0.2", "25-10-2026", "Mapa competitivo, comparativa de capacidades, estado del arte y gap; etiquetado verificado/estimado."),
-  ("0.3", "25-10-2026", "Revisión del orquestador: atribución correcta de las referencias científicas [8]–[14]."),
+  ("0.3", "25-10-2026", "Revisión del orquestador: atribución correcta de las referencias científicas."),
+  ("0.4", "25-10-2026", "Proyecto independiente: se elimina la identidad de Telefónica; Smart Steps se cita como producto de terceros."),
 ))

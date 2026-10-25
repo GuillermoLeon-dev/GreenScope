@@ -5,8 +5,10 @@ bolsillo**. Combina observación de la Tierra, OpenStreetMap, padrón y movilida
 ML y series temporales dentro de una metodología **CRISP-ML(Q)**. El modelo propone y el técnico
 decide: los umbrales son configurables y cada propuesta requiere aprobación humana.
 
-Piloto: **Madrid central** (763 celdas H3 de resolución 9). Es un experimento con estética
-inspirada en Telefónica Tech, y no usa el logotipo registrado.
+Piloto: **Madrid central** (763 celdas H3 de resolución 9). Experimento personal.
+
+> **Aviso:** Proyecto independiente, sin afiliación con Telefónica ni con ninguna otra empresa. Las menciones a Smart Steps (Telefónica Tech) se refieren a un producto de
+> terceros citado como posible fuente de datos; en la demo esos datos son sintéticos.
 
 ## Estructura
 
@@ -14,7 +16,7 @@ inspirada en Telefónica Tech, y no usa el logotipo registrado.
 |---|---|
 | `docs/` | **Web estática** (GitHub Pages): MapLibre GL + Chart.js, ES modules sin build. `docs/data/` contiene los artefactos del pipeline y `docs/pdf/` la documentación. |
 | `backend/` | Python 3.12 + uv con arquitectura hexagonal (`domain`, `application`, `infrastructure`, `api`): pipeline ML, API FastAPI opcional y tests. |
-| `documentacion/` | Documentos Typst (00–07) con tema corporativo y fuente Hanken Grotesk (OFL), además de `build.py`. |
+| `documentacion/` | Documentos Typst (00–07) con tema propio y fuente Hanken Grotesk (OFL), además de `build.py`. |
 | `contratos/` | Contrato de datos entre el pipeline y la web, y tokens de marca. |
 | `tiempos/` | Cronometraje del experimento (`cronometro.log`, en UTC). |
 | `.github/workflows/` | `ci.yml` (lint + tests) y `pages.yml` (regenerar y desplegar, manual). |
@@ -54,7 +56,7 @@ uv run --python 3.12 --with typst python build.py
 
 ## Modelo, en una frase por pieza
 
-- **Features por celda:** m² de verde por habitante (OMS 9 m²), distancia al verde ≥ 0,5 ha (300 m), cobertura vegetal (3-30-300), LST, tendencia de NDVI, vulnerabilidad, población residente y flotante (Smart Steps).
+- **Features por celda:** m² de verde por habitante (OMS 9 m²), distancia al verde ≥ 0,5 ha (300 m), cobertura vegetal (3-30-300), LST, tendencia de NDVI, vulnerabilidad, población residente y flotante (datos de operador tipo Smart Steps).
 - **Déficit:** índice compuesto más LightGBM con supervisión débil, calibrado, con explicaciones SHAP e incertidumbre.
 - **Series temporales:** STL, tendencia Theil-Sen, detección de anomalías y previsión Holt-Winters a 12 meses.
 - **Propuestas:** solares, aparcamientos, interbloques, chaflanes y calles pacificables, ordenados por un ranking multicriterio con coste, enfriamiento y CO₂ estimados.

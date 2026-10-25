@@ -61,6 +61,7 @@ export const LAYERS = [
 ];
 
 export const DOCS = [
+  ['00_indice.pdf', '00 · Resumen ejecutivo'],
   ['01_mercado_estado_arte.pdf', '01 · Mercado y estado del arte'],
   ['02_propuesta_innovacion.pdf', '02 · Propuesta de innovación'],
   ['03_arquitectura_tecnologias.pdf', '03 · Arquitectura y tecnologías'],

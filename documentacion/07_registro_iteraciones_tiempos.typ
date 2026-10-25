@@ -1,4 +1,4 @@
-#import "tema/telefonica.typ": *
+#import "tema/verdescope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -149,7 +149,7 @@ El experimento registra cada etapa con `tiempos/crono.sh start|stop <etapa>`, qu
 
 - Siguiente iteración propuesta: conectores reales (STAC Sentinel-2, INE, Smart Steps) y validación de campo con técnicos municipales.
 - Los datos de EO, INE y Smart Steps de la demo son sintéticos; las métricas del documento 04 reflejan esa naturaleza.
-- La tipografía corporativa Telefónica Sans no es libre; se usa Hanken Grotesk (OFL) como sustituta y no se emplea el logotipo registrado.
+- Proyecto independiente, sin afiliación con Telefónica ni con ninguna otra empresa. Tipografía Hanken Grotesk (SIL OFL).
 
 #v(10pt)
 #historial((

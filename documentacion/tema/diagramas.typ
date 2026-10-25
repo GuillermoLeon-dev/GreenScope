@@ -1,6 +1,6 @@
-// Componentes reutilizables para diagramas (sobre fletcher), paleta Telefónica.
+// Componentes reutilizables para diagramas (sobre fletcher), paleta de VerdeScope.
 #import "@preview/fletcher:0.5.8": diagram, node, edge
-#import "telefonica.typ": *
+#import "verdescope.typ": *
 
 #let tonos = (
   azul: (fill: azul, stroke: azul, txt: white),
@@ -14,7 +14,7 @@
   gris: (fill: rgb("#F3F4F7"), stroke: gris2, txt: gris6),
 )
 
-/// Nodo con tono corporativo. `pos`: coordenada fletcher; `cuerpo`: contenido.
+/// Nodo con tono de la paleta. `pos`: coordenada fletcher; `cuerpo`: contenido.
 #let nodo(pos, cuerpo, tono: "claro", w: auto, h: auto, forma: rect, tam: 8.5pt, ..args) = {
   let t = tonos.at(tono)
   node(pos, align(center, { show raw: it => text(font: mono, it.text); text(size: tam, fill: t.txt, cuerpo) }),

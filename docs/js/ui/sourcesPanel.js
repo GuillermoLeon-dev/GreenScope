@@ -40,10 +40,9 @@ export function renderSourcesPanel(root, manifest, isSample) {
     </section>
     <section class="section">
       <h2>Documentación</h2>
-      <p class="muted"><a href="./pdf/" target="_blank" rel="noopener">Abrir carpeta de documentación</a></p>
       <ul class="doc-list">
         ${DOCS.map(([file, label]) => `<li><a href="./pdf/${file}" target="_blank" rel="noopener">${esc(label)}</a></li>`).join('')}
       </ul>
     </section>
-    <p class="muted">VerdeScope · Telefónica Tech · Uso interno — Experimento.</p>`;
+    <p class="muted">VerdeScope · Proyecto independiente, sin afiliación con Telefónica ni con ninguna otra empresa. Smart Steps es una marca de Telefónica Tech, citada como posible fuente de datos.</p>`;
 }

@@ -1,5 +1,5 @@
-// VerdeScope · tema documental inspirado en la identidad Telefónica (sin logotipo registrado)
-// Tipografía: Hanken Grotesk (OFL) como sustituta libre de Telefónica Sans.
+// VerdeScope · tema documental propio del proyecto
+// Tipografía: Hanken Grotesk (SIL OFL).
 
 #let azul = rgb("#0066FF")
 #let azul-osc = rgb("#0B2739")
@@ -69,7 +69,7 @@
 
 // ---------- Plantilla ----------
 #let documento(
-  titulo: "", subtitulo: "", version: "0.1", fecha: "", autor: "Telefónica Tech · Equipo VerdeScope",
+  titulo: "", subtitulo: "", version: "0.1", fecha: "", autor: "Equipo VerdeScope · proyecto independiente",
   indice: true, cuerpo,
 ) = {
   set document(title: titulo + " — VerdeScope", author: autor)
@@ -84,9 +84,9 @@
     #place(top + right, dx: 20pt, dy: 190pt, circle(radius: 55pt, fill: white, stroke: none))
     #place(bottom + left, dx: -80pt, dy: 80pt, circle(radius: 170pt, fill: rgb("#0057E0"), stroke: none))
     #place(top + left, dx: 56pt, dy: 64pt)[
-      #text(size: 20pt, weight: 700, fill: white, tracking: -0.2pt)[Telefónica]
+      #text(size: 20pt, weight: 700, fill: white, tracking: -0.2pt)[VerdeScope]
       #h(1pt) #box(circle(radius: 3pt, fill: white), baseline: 0pt)
-      #h(4pt) #text(size: 20pt, weight: 300, fill: white)[Tech]
+      #h(4pt) #text(size: 20pt, weight: 300, fill: white)[Lab]
     ]
     #place(left + horizon, dx: 56pt, dy: -20pt, block(width: 380pt)[
       #text(size: 11pt, weight: 700, fill: azul-cl, tracking: 1.2pt)[#upper[VerdeScope · documentación]]
@@ -101,7 +101,7 @@
         text(weight: 700)[Versión], [#version],
         text(weight: 700)[Fecha], [#fecha],
         text(weight: 700)[Autoría], [#autor],
-        text(weight: 700)[Estado], [Documento iterativo · uso interno — experimento],
+        text(weight: 700)[Estado], [Documento iterativo · experimento personal],
       )
     ]
   ]
@@ -112,7 +112,7 @@
     header: context {
       if counter(page).get().first() > 0 {
         set text(size: 8.5pt, fill: gris6)
-        grid(columns: (1fr, auto), [*VerdeScope* · Telefónica Tech], [#titulo])
+        grid(columns: (1fr, auto), [*VerdeScope* · Proyecto independiente], [#titulo])
         v(-6pt)
         line(length: 100%, stroke: 0.5pt + gris2)
       }
@@ -122,7 +122,7 @@
       line(length: 100%, stroke: 0.5pt + gris2)
       v(-4pt)
       grid(columns: (1fr, auto),
-        [Uso interno — Experimento],
+        [Proyecto independiente — sin afiliación con Telefónica · Experimento],
         [pág. #counter(page).display() / #counter(page).final().first()])
     },
   )
