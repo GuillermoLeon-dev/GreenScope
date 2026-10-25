@@ -1,0 +1,17 @@
+etapa,evento,timestamp
+0_preparacion,start,2026-10-25T00:28:22Z
+0_preparacion,stop,2026-10-25T00:28:38Z
+1_analisis_mercado_estado_arte,start,2026-10-25T00:28:38Z
+1_analisis_mercado_estado_arte,stop,2026-10-25T00:38:52Z
+2_diseno_contratos,start,2026-10-25T00:38:53Z
+2_diseno_contratos,stop,2026-10-25T00:40:09Z
+3_impl_backend_ml,start,2026-10-25T00:40:59Z
+4_impl_frontend,start,2026-10-25T00:41:09Z
+5_documentacion,start,2026-10-25T00:41:50Z
+4_impl_frontend,stop,2026-10-25T00:51:21Z
+5_documentacion,stop,2026-10-25T00:56:38Z
+3_impl_backend_ml,stop,2026-10-25T00:58:31Z
+6_integracion_verificacion,start,2026-10-25T00:58:56Z
+6_integracion_verificacion,stop,2026-10-25T01:01:50Z
+7_cierre_publicacion,start,2026-10-25T01:01:51Z
+7_cierre_publicacion,stop,2026-10-25T01:02:34Z

@@ -1,0 +1,26 @@
+{
+  "_nota": "Centroides aproximados (lat, lon) de los distritos municipales de Madrid; asignacion por centroide mas cercano.",
+  "districts": [
+    {"name": "Centro", "lat": 40.4153, "lon": -3.7074},
+    {"name": "Arganzuela", "lat": 40.3975, "lon": -3.6965},
+    {"name": "Retiro", "lat": 40.4110, "lon": -3.6760},
+    {"name": "Salamanca", "lat": 40.4310, "lon": -3.6770},
+    {"name": "Chamartín", "lat": 40.4600, "lon": -3.6770},
+    {"name": "Tetuán", "lat": 40.4600, "lon": -3.7000},
+    {"name": "Chamberí", "lat": 40.4350, "lon": -3.7040},
+    {"name": "Fuencarral-El Pardo", "lat": 40.5000, "lon": -3.7500},
+    {"name": "Moncloa-Aravaca", "lat": 40.4350, "lon": -3.7300},
+    {"name": "Latina", "lat": 40.3880, "lon": -3.7480},
+    {"name": "Carabanchel", "lat": 40.3800, "lon": -3.7300},
+    {"name": "Usera", "lat": 40.3830, "lon": -3.7050},
+    {"name": "Puente de Vallecas", "lat": 40.3920, "lon": -3.6600},
+    {"name": "Moratalaz", "lat": 40.4070, "lon": -3.6450},
+    {"name": "Ciudad Lineal", "lat": 40.4450, "lon": -3.6500},
+    {"name": "Hortaleza", "lat": 40.4700, "lon": -3.6400},
+    {"name": "Villaverde", "lat": 40.3480, "lon": -3.7050},
+    {"name": "Villa de Vallecas", "lat": 40.3680, "lon": -3.6200},
+    {"name": "Vicálvaro", "lat": 40.4050, "lon": -3.6000},
+    {"name": "San Blas-Canillejas", "lat": 40.4350, "lon": -3.6100},
+    {"name": "Barajas", "lat": 40.4750, "lon": -3.5800}
+  ]
+}

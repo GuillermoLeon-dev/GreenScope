@@ -1,0 +1,18 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Claude Code local
+.claude/
+# Intermedios de documentación (los PDFs finales sí se versionan en documentacion/pdf y docs/pdf)
+documentacion/_build/
+documentacion/previews/
