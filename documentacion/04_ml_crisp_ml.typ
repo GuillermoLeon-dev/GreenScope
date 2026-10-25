@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -33,7 +33,7 @@ CRISP-ML(Q) extiende CRISP-DM con una *fase de monitorización y mantenimiento* 
   [Ciclo de las seis fases de CRISP-ML(Q) con gestión de calidad transversal.],
 )
 
-= Fase a fase aplicada a VerdeScope
+= Fase a fase aplicada a GreenScope
 
 #tabla(
   columns: (auto, 1fr, 1fr),

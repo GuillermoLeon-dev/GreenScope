@@ -1,4 +1,4 @@
-# Contrato de datos — VerdeScope v1
+# Contrato de datos — GreenScope v1
 
 Fuente única de verdad entre el **pipeline ML** (`backend/`, productor) y la **web estática**
 (`docs/`, consumidora). El pipeline escribe en `docs/data/`; la web lee con rutas relativas
@@ -13,7 +13,7 @@ bbox `[-3.75, 40.38, -3.64, 40.46]`, H3 resolución 9.
 ```json
 {
   "schema_version": "1.0.0",
-  "app": "VerdeScope",
+  "app": "GreenScope",
   "city": "Madrid",
   "bbox": [-3.75, 40.38, -3.64, 40.46],
   "h3_resolution": 9,
@@ -97,5 +97,5 @@ Parques/jardines existentes (OSM), Polygon, `properties`: `name`, `area_m2`, `ki
  "timestamp": "ISO-8601", "model_version": "deficit-lgbm-0.1.0",
  "thresholds": {"critical": 0.7, "review": 0.4, "min_proposal_priority": 0.5}}
 ```
-Exportable como `decisiones_verdescope_<fecha>.json` (lista de registros). La API FastAPI expone
+Exportable como `decisiones_greenscope_<fecha>.json` (lista de registros). La API FastAPI expone
 `GET/POST /api/decisions` con este mismo esquema; los registros alimentan el active learning.

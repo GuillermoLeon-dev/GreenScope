@@ -1,4 +1,4 @@
-/** Constantes de configuración de VerdeScope (rutas relativas: válidas bajo usuario.github.io/repo/). */
+/** Constantes de configuración de GreenScope (rutas relativas: válidas bajo usuario.github.io/repo/). */
 
 export const PATHS = {
   primary: './data/',
@@ -20,8 +20,8 @@ export const BASEMAPS = {
 };
 
 export const STORAGE_KEYS = {
-  decisions: 'verdescope.decisions.v1',
-  technician: 'verdescope.technician.v1',
+  decisions: 'greenscope.decisions.v1',
+  technician: 'greenscope.technician.v1',
 };
 
 export const DEFAULT_THRESHOLDS = { critical: 0.7, review: 0.4, min_proposal_priority: 0.5 };

@@ -8,9 +8,9 @@ from pathlib import Path
 
 import pytest
 
-from verdescope.application.pipeline import PipelineResult, RunPipeline
-from verdescope.bootstrap import build_pipeline
-from verdescope.config import ModelSettings, Settings
+from greenscope.application.pipeline import PipelineResult, RunPipeline
+from greenscope.bootstrap import build_pipeline
+from greenscope.config import ModelSettings, Settings
 
 TEST_BBOX = (-3.72, 40.40, -3.67, 40.44)
 

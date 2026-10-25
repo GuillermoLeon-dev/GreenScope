@@ -1,4 +1,4 @@
-/** Arranque de VerdeScope: carga datos, crea el estado y conecta los módulos de UI. */
+/** Arranque de GreenScope: carga datos, crea el estado y conecta los módulos de UI. */
 import { DEFAULT_THRESHOLDS, STORAGE_KEYS } from './config.js';
 import { loadData, loadConfig } from './data/dataRepository.js';
 import { createDecisionStore } from './stores/decisionStore.js';

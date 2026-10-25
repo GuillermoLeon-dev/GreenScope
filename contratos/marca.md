@@ -1,6 +1,6 @@
-# Tokens de marca de VerdeScope
+# Tokens de marca de GreenScope
 
-Proyecto independiente, sin afiliación con Telefónica ni con ninguna otra empresa. En portadas se usa el texto "VerdeScope Lab" compuesto con la tipografía + un punto/círculo
+Proyecto independiente, sin afiliación con Telefónica ni con ninguna otra empresa. En portadas se usa el texto "GreenScope Labs" compuesto con la tipografía + un punto/círculo
 como recurso gráfico. No usar logotipos ni nombres de marcas de terceros como identidad.
 
 ## Tipografía
@@ -28,5 +28,5 @@ Escala secuencial de déficit (0→1): `#E5F0FF` → `#8DB9FB` → `#F2A900` →
 ## Estilo
 - Mucho blanco, titulares grandes en `blue-dark` peso 700, subrayados/acentos en `blue`.
 - Esquinas redondeadas (8 px / 2 mm), sin sombras pesadas, iconografía lineal.
-- Documentos A4: portada a sangre en `blue` con título blanco; cabecera con "VerdeScope · Proyecto independiente"
+- Documentos A4: portada a sangre en `blue` con título blanco; cabecera con "GreenScope Labs"
   y pie con nº de página y "Proyecto independiente — sin afiliación con Telefónica · Experimento".

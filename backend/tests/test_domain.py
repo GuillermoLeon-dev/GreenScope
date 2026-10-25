@@ -5,9 +5,9 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from verdescope.domain import rules
-from verdescope.domain.entities import Classification, ProposalKind, Thresholds
-from verdescope.domain.policies import (
+from greenscope.domain import rules
+from greenscope.domain.entities import Classification, ProposalKind, Thresholds
+from greenscope.domain.policies import (
     DeficitWeights,
     PriorityWeights,
     ProposalAssumptions,

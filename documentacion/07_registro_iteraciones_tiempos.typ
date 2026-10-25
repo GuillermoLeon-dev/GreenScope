@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(

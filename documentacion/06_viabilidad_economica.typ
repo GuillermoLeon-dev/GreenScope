@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -248,13 +248,13 @@ El producto se comercializa como *SaaS anual por ciudad*, con precio por tramo d
   ..ben.map(b => ([Beneficio anual: #b.n], [#b.v €/m²·año])).flatten(),
   [Beneficio social y fiscal anual estimado], [#k(ben-anual) k€/año],
   [Retorno simple de la inversión], [#str(calc.round(coste-prog / ben-anual, digits: 1)).replace(".", ",") años],
-  [Coste anual de VerdeScope (tramo M)], [#k(saas-m) k€/año],
+  [Coste anual de GreenScope (tramo M)], [#k(saas-m) k€/año],
   [Coste de un estudio manual equivalente de consultoría], [≈ #k(consultoria) k€ por estudio],
 )
 #estimado[Los beneficios por m² son hipótesis ilustrativas de valoración de servicios ecosistémicos, no mediciones; deben calibrarse con literatura y datos locales. El estudio manual se estima en 60–120 k€ para una ciudad media y no es continuo (sin series temporales ni reevaluación).]
 
 #decision[
-  *Valor para el ayuntamiento.* El beneficio principal de VerdeScope no es abaratar la obra sino *acertar dónde invertir primero*: concentrar las parcelas en las celdas con mayor población servida y calor mitiga el riesgo de gastar en zonas de bajo impacto. Con los supuestos anteriores, el coste anual de la herramienta (#k(saas-m) k€) equivale al #str(calc.round(saas-m / coste-prog * 100, digits: 1)).replace(".", ",") % de la inversión del programa de ejemplo y se compara con un estudio manual puntual de #k(consultoria) k€.
+  *Valor para el ayuntamiento.* El beneficio principal de GreenScope no es abaratar la obra sino *acertar dónde invertir primero*: concentrar las parcelas en las celdas con mayor población servida y calor mitiga el riesgo de gastar en zonas de bajo impacto. Con los supuestos anteriores, el coste anual de la herramienta (#k(saas-m) k€) equivale al #str(calc.round(saas-m / coste-prog * 100, digits: 1)).replace(".", ",") % de la inversión del programa de ejemplo y se compara con un estudio manual puntual de #k(consultoria) k€.
 ]
 
 #atencion[

@@ -9,17 +9,17 @@ import numpy as np
 import pytest
 from fastapi.testclient import TestClient
 
-from verdescope.api.main import create_app
-from verdescope.application.decisions import InvalidDecisionError, RecordDecision
-from verdescope.config import Settings
-from verdescope.domain.entities import DecisionKind, Thresholds
-from verdescope.infrastructure.osm_overpass import OverpassOsmSource, parse_overpass
-from verdescope.infrastructure.osm_synthetic import SyntheticOsmSource
-from verdescope.infrastructure.repositories import (
+from greenscope.api.main import create_app
+from greenscope.application.decisions import InvalidDecisionError, RecordDecision
+from greenscope.config import Settings
+from greenscope.domain.entities import DecisionKind, Thresholds
+from greenscope.infrastructure.osm_overpass import OverpassOsmSource, parse_overpass
+from greenscope.infrastructure.osm_synthetic import SyntheticOsmSource
+from greenscope.infrastructure.repositories import (
     InMemoryDecisionRepository,
     JsonFileDecisionRepository,
 )
-from verdescope.infrastructure.segmenters import NdviThresholdSegmenter, UNetSegmenter
+from greenscope.infrastructure.segmenters import NdviThresholdSegmenter, UNetSegmenter
 
 SQUARE = [(-3.70, 40.41), (-3.69, 40.41), (-3.69, 40.42), (-3.70, 40.42), (-3.70, 40.41)]
 

@@ -1,4 +1,4 @@
-# VerdeScope - backend y pipeline ML
+# GreenScope - backend y pipeline ML
 
 Detección de déficit de zonas verdes y propuesta de parques de bolsillo (piloto: Madrid central,
 bbox `[-3.75, 40.38, -3.64, 40.46]`, celdas H3 res. 9). Produce los artefactos del contrato
@@ -9,12 +9,12 @@ bbox `[-3.75, 40.38, -3.64, 40.46]`, celdas H3 res. 9). Produce los artefactos d
 ```bash
 cd backend
 uv sync                          # Python 3.12 (uv lo instala si falta)
-uv run verdescope pipeline       # usa la caché OSM; si no existe descarga de Overpass
-uv run verdescope pipeline --offline   # nunca usa la red (caché o fallback sintético)
+uv run greenscope pipeline       # usa la caché OSM; si no existe descarga de Overpass
+uv run greenscope pipeline --offline   # nunca usa la red (caché o fallback sintético)
 uv run pytest                    # tests
 uv run ruff check                # lint
-uv run verdescope serve          # API + web estática en http://127.0.0.1:8000
-# equivalente: uv run uvicorn verdescope.api.main:app
+uv run greenscope serve          # API + web estática en http://127.0.0.1:8000
+# equivalente: uv run uvicorn greenscope.api.main:app
 ```
 
 Opcionales: `uv sync --extra stac` (Planetary Computer), `--extra dl` (torch para `UNetSegmenter`).
@@ -23,7 +23,7 @@ Primera ejecución del pipeline completo: ~1 min (la mayor parte, previsión Hol
 ## Arquitectura (hexagonal)
 
 ```
-src/verdescope/
+src/greenscope/
   domain/          entidades (Cell, Proposal, Decision, Thresholds), reglas puras (clasificación,
                    índice compuesto, etiquetas débiles, prioridad, coste/enfriamiento/CO2), policies
   application/     casos de uso: BuildFeatures, ForecastVegetation, ScoreDeficit, GenerateProposals,

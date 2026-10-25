@@ -1,4 +1,4 @@
-# VerdeScope · Déficit de verde y parques de bolsillo
+# GreenScope · Déficit de verde y parques de bolsillo
 
 Aplicación web que **detecta zonas urbanas con déficit de zonas verdes** y **propone parques de
 bolsillo**. Combina observación de la Tierra, OpenStreetMap, padrón y movilidad (data fusion) con
@@ -43,8 +43,8 @@ para auditoría. Con la API (`docs/config.json → api_base_url`) se centralizan
 cd backend
 uv sync
 uv run pytest                     # 54 tests
-uv run verdescope pipeline        # regenera docs/data (OSM vía Overpass; --offline usa la caché)
-uv run verdescope serve           # API + web en http://localhost:8000
+uv run greenscope pipeline        # regenera docs/data (OSM vía Overpass; --offline usa la caché)
+uv run greenscope serve           # API + web en http://localhost:8000
 ```
 
 Documentación:

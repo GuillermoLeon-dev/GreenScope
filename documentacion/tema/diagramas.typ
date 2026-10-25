@@ -1,6 +1,6 @@
-// Componentes reutilizables para diagramas (sobre fletcher), paleta de VerdeScope.
+// Componentes reutilizables para diagramas (sobre fletcher), paleta de GreenScope.
 #import "@preview/fletcher:0.5.8": diagram, node, edge
-#import "verdescope.typ": *
+#import "greenscope.typ": *
 
 #let tonos = (
   azul: (fill: azul, stroke: azul, txt: white),

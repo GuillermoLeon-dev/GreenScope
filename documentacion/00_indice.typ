@@ -1,15 +1,15 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
-  titulo: "VerdeScope",
+  titulo: "GreenScope",
   subtitulo: "Resumen ejecutivo y guía de la documentación",
   version: "0.2", fecha: "25 de octubre de 2026",
 )
 
 = Resumen ejecutivo
 
-*VerdeScope* es una aplicación web de apoyo a la decisión que detecta zonas urbanas con déficit de verde, explica por qué, vigila su evolución y *propone parques de bolsillo* priorizados. El técnico municipal fija los umbrales y decide —aprueba, rechaza o ajusta— cada propuesta; cada decisión queda auditada y mejora el modelo. El piloto es *Madrid* (distritos centrales) y la demo es desplegable como sitio estático en GitHub Pages.
+*GreenScope* es una aplicación web de apoyo a la decisión que detecta zonas urbanas con déficit de verde, explica por qué, vigila su evolución y *propone parques de bolsillo* priorizados. El técnico municipal fija los umbrales y decide —aprueba, rechaza o ajusta— cada propuesta; cada decisión queda auditada y mejora el modelo. El piloto es *Madrid* (distritos centrales) y la demo es desplegable como sitio estático en GitHub Pages.
 
 == Por qué ahora y por qué la fusión de datos
 
@@ -26,7 +26,7 @@
     flecha((0, 0), (1, 0)), flecha((1, 0), (2, 0)), flecha((2, 0), (3, 0)),
     flecha((3, 0), (1, 0), tipo: "-->", bend: 40deg, etiqueta: "etiquetas"),
   ),
-  [VerdeScope de un vistazo.],
+  [GreenScope de un vistazo.],
 )
 
 == Cifras clave y su estatus

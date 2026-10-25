@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -9,7 +9,7 @@
 
 = Visión general
 
-VerdeScope separa con claridad el *dominio* (reglas de negocio puras), los *casos de uso*, la *infraestructura* (datos, modelos, persistencia) y las *interfaces* (API FastAPI y web estática). El resultado es un sistema que se despliega de dos formas con el mismo código de dominio: como *sitio estático* (GitHub Pages) y como *servicio corporativo* con API y base de datos.
+GreenScope separa con claridad el *dominio* (reglas de negocio puras), los *casos de uso*, la *infraestructura* (datos, modelos, persistencia) y las *interfaces* (API FastAPI y web estática). El resultado es un sistema que se despliega de dos formas con el mismo código de dominio: como *sitio estático* (GitHub Pages) y como *servicio corporativo* con API y base de datos.
 
 = Arquitectura hexagonal
 
@@ -18,7 +18,7 @@ VerdeScope separa con claridad el *dominio* (reglas de negocio puras), los *caso
     contenedor(((0, 0), (3, 0)), "Interfaces (adaptadores de entrada)", tono: "gris"),
     nodo((0, 0), [*web*\ SPA estática\ MapLibre], tono: "claro"),
     nodo((1, 0), [*api*\ FastAPI\ /api/decisions], tono: "claro"),
-    nodo((2, 0), [*cli*\ `verdescope pipeline`], tono: "claro"),
+    nodo((2, 0), [*cli*\ `greenscope pipeline`], tono: "claro"),
     nodo((3, 0), [*GitHub Actions*\ CI/CD], tono: "claro"),
     contenedor(((0, 2), (3, 2)), "Aplicación (casos de uso)", tono: "gris"),
     nodo((0, 2), [Ejecutar pipeline], tono: "azul"),
@@ -48,7 +48,7 @@ VerdeScope separa con claridad el *dominio* (reglas de negocio puras), los *caso
 
 #tabla(
   columns: (auto, 1fr),
-  [Capa], [Responsabilidad y contenido (backend/src/verdescope/)],
+  [Capa], [Responsabilidad y contenido (backend/src/greenscope/)],
   [`domain`], [Entidades (celda, propuesta, decisión), reglas puras (clasificación por umbrales, normalización), políticas de priorización. Probable de probar sin mocks.],
   [`application`], [Casos de uso: ejecutar el pipeline, calcular propuestas, registrar decisiones. Orquesta puertos.],
   [`infrastructure`], [Conectores `DataSource` (OSM/Overpass, STAC, INE, Smart Steps), modelos (LightGBM, SHAP, STL, Theil-Sen), exportadores de artefactos.],

@@ -111,5 +111,5 @@ export function parseImported(json, existing) {
 
 /** @param {string} day YYYY-MM-DD */
 export function exportFilename(day) {
-  return `decisiones_verdescope_${day}.json`;
+  return `decisiones_greenscope_${day}.json`;
 }

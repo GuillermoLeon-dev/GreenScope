@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -19,7 +19,7 @@ Los ayuntamientos saben que les falta verde de proximidad, pero deciden con info
 
 == Propuesta de valor
 
-VerdeScope es una aplicación de _apoyo a la decisión_ que *detecta* zonas con déficit de verde, *explica* por qué, *vigila* su evolución y *propone* parques de bolsillo candidatos priorizados. El técnico municipal fija los umbrales y *aprueba, rechaza o ajusta* cada propuesta; cada decisión queda registrada y mejora el sistema.
+GreenScope es una aplicación de _apoyo a la decisión_ que *detecta* zonas con déficit de verde, *explica* por qué, *vigila* su evolución y *propone* parques de bolsillo candidatos priorizados. El técnico municipal fija los umbrales y *aprueba, rechaza o ajusta* cada propuesta; cada decisión queda registrada y mejora el sistema.
 
 #figura(
   dg(sp: (34mm, 14mm),
@@ -39,7 +39,7 @@ VerdeScope es una aplicación de _apoyo a la decisión_ que *detecta* zonas con 
 
 #tabla(
   columns: (1fr, 1.4fr, 1.4fr),
-  [Usuario], [Necesidad principal], [Qué ofrece VerdeScope],
+  [Usuario], [Necesidad principal], [Qué ofrece GreenScope],
   [*Técnico municipal* (medio ambiente / parques)], [Revisar casos con criterio y justificar la decisión ante superiores y vecindario.], [Cola de propuestas con «por qué se propone», factores SHAP, incertidumbre, aprobar/rechazar/ajustar con comentario y auditoría exportable.],
   [*Planificador urbano*], [Priorizar inversión y simular escenarios de umbral.], [Mapa de celdas con déficit, calor y vulnerabilidad; sliders de umbral; ranking multicriterio; series temporales y previsión.],
   [*Dirección / concejalía*], [Visión agregada, rendición de cuentas y retorno.], [Indicadores resumidos (m²/hab, población servida, ahorro de calor), histórico de decisiones y estado del plan.],

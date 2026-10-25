@@ -8,7 +8,7 @@ import re
 import numpy as np
 import pytest
 
-from verdescope.domain.labels import FEATURE_COLUMNS, FEATURE_LABELS
+from greenscope.domain.labels import FEATURE_COLUMNS, FEATURE_LABELS
 
 CELL_KEYS = {
     "h3", "district", "population", "floating_population", "green_m2_per_capita",
@@ -57,7 +57,7 @@ def test_fusion_is_spatially_coherent(result):
 
 
 def test_sources_are_deterministic(small_settings):
-    from verdescope.bootstrap import build_pipeline
+    from greenscope.bootstrap import build_pipeline
 
     a = build_pipeline(small_settings, offline=True).run().feature_set.features
     b = build_pipeline(small_settings, offline=True).run().feature_set.features
@@ -104,7 +104,7 @@ def test_synthetic_candidates_only_in_cells_with_deficit(result, small_settings)
 # --- contrato -----------------------------------------------------------------------------
 def test_manifest_matches_contract(data_dir, result):
     m = json.loads((data_dir / "manifest.json").read_text(encoding="utf-8"))
-    assert m["schema_version"] == "1.0.0" and m["app"] == "VerdeScope"
+    assert m["schema_version"] == "1.0.0" and m["app"] == "GreenScope"
     assert m["h3_resolution"] == 9 and m["period"] == {"start": "2019-01", "end": "2026-09"}
     assert m["thresholds_default"] == {"critical": 0.7, "review": 0.4, "min_proposal_priority": 0.5}
     assert {s["id"] for s in m["sources"]} == {"osm", "s2", "lst", "ine", "smartsteps"}

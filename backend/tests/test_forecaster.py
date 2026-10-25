@@ -5,9 +5,9 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from verdescope.application.forecasting import next_months
-from verdescope.config import ModelSettings
-from verdescope.infrastructure.forecaster import StlTheilSenForecaster, fill_gaps
+from greenscope.application.forecasting import next_months
+from greenscope.config import ModelSettings
+from greenscope.infrastructure.forecaster import StlTheilSenForecaster, fill_gaps
 
 MONTHS = 93
 HORIZON = 12

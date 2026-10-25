@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -9,19 +9,19 @@
 
 = Resumen y criterio de lectura
 
-Este documento sitúa VerdeScope en su contexto: por qué el déficit de verde urbano es un problema medible, qué herramientas existen hoy, qué ha demostrado la investigación reciente y dónde queda un hueco de mercado que una solución con fusión de datos puede ocupar.
+Este documento sitúa GreenScope en su contexto: por qué el déficit de verde urbano es un problema medible, qué herramientas existen hoy, qué ha demostrado la investigación reciente y dónde queda un hueco de mercado que una solución con fusión de datos puede ocupar.
 
 #nota[
   *Convención de veracidad.* #tag-verificado indica una cifra o afirmación procedente de una fuente pública enlazada en las referencias. #tag-estimado indica una valoración propia del equipo (la comparativa de capacidades se basa en la documentación pública de cada producto, no en pruebas de uso). La atribución fina de cada métrica científica a su artículo debe revisarse contra la fuente original antes de citarla fuera de la organización.
 ]
 
-*Conclusión principal.* Existen buenas herramientas para _medir_ el verde (cobertura arbórea, regla 3-30-300) pero ninguna de las analizadas combina, en un mismo flujo: (1) detección a escala de manzana, (2) series temporales de degradación, (3) *propuesta priorizada de intervenciones* tipo parque de bolsillo, (4) *decisión humana guiada por umbrales* y (5) *demanda real* basada en movilidad. Ese conjunto es el espacio que ocupa VerdeScope.
+*Conclusión principal.* Existen buenas herramientas para _medir_ el verde (cobertura arbórea, regla 3-30-300) pero ninguna de las analizadas combina, en un mismo flujo: (1) detección a escala de manzana, (2) series temporales de degradación, (3) *propuesta priorizada de intervenciones* tipo parque de bolsillo, (4) *decisión humana guiada por umbrales* y (5) *demanda real* basada en movilidad. Ese conjunto es el espacio que ocupa GreenScope.
 
 = Contexto: el problema del verde urbano
 
 == Referencias de salud pública y planificación
 
-- *OMS.* La Organización Mundial de la Salud se cita habitualmente como referencia orientativa de entre 9 y 15 m² de zona verde por habitante. #dato[El rango 9–15 m²/hab es la cifra comúnmente atribuida a la OMS.] Es una referencia de planificación, no una norma vinculante; VerdeScope la usa como _umbral inicial_ configurable, no como verdad normativa.
+- *OMS.* La Organización Mundial de la Salud se cita habitualmente como referencia orientativa de entre 9 y 15 m² de zona verde por habitante. #dato[El rango 9–15 m²/hab es la cifra comúnmente atribuida a la OMS.] Es una referencia de planificación, no una norma vinculante; GreenScope la usa como _umbral inicial_ configurable, no como verdad normativa.
 - *Regla 3-30-300* (Cecil Konijnendijk). Propone que cada persona vea al menos *3 árboles* desde su vivienda, que cada barrio tenga un *30 %* de cobertura arbórea y que exista un espacio verde a menos de *300 m*. #dato[Documentada y difundida como estándar emergente en las fuentes [1] y [2].]
 - *ISGlobal.* Un estudio sobre ciudades españolas concluye que *el 84 % de la población de Madrid y el 95 % de la de Barcelona* no tiene un espacio verde de más de 0,5 ha a 300 m de su domicilio. #dato[Cifras de ISGlobal recogidas en [7].] La misma cobertura periodística asocia polución, ruido y calor a unas 1.900 muertes prematuras anuales entre ambas ciudades.
 
@@ -40,7 +40,7 @@ Este documento sitúa VerdeScope en su contexto: por qué el déficit de verde u
 
 == Por qué los parques de bolsillo
 
-Madrid y Barcelona tienen poco suelo libre: la vía realista para cerrar el déficit no es el gran parque nuevo, sino la intervención *pequeña y distribuida* (solares vacantes, aparcamientos reconvertibles, chaflanes, calles pacificables) que acerca un verde de proximidad a quien hoy está a más de 300 m. Esa lógica exige localizar _dónde_ importa más (déficit + calor + población servida) y _qué_ parcelas son viables, que es exactamente el problema que resuelve VerdeScope.
+Madrid y Barcelona tienen poco suelo libre: la vía realista para cerrar el déficit no es el gran parque nuevo, sino la intervención *pequeña y distribuida* (solares vacantes, aparcamientos reconvertibles, chaflanes, calles pacificables) que acerca un verde de proximidad a quien hoy está a más de 300 m. Esa lógica exige localizar _dónde_ importa más (déficit + calor + población servida) y _qué_ parcelas son viables, que es exactamente el problema que resuelve GreenScope.
 
 = Mapa competitivo
 
@@ -48,7 +48,7 @@ Madrid y Barcelona tienen poco suelo libre: la vía realista para cerrar el déf
 
 #tabla(
   columns: (1.1fr, 1.5fr, 1.5fr),
-  [Solución], [Qué hace (según su documentación pública)], [Límite respecto a VerdeScope],
+  [Solución], [Qué hace (según su documentación pública)], [Límite respecto a GreenScope],
   [*Urban Forest 3-30-300* (Treeconomics, Reino Unido)], [Herramienta de mapeo que lleva el estándar 3-30-300 al Reino Unido; evalúa el cumplimiento por ubicación [1].], [Mide cumplimiento; no propone intervenciones ni incorpora decisión por umbrales ni movilidad.],
   [*Tygron* (Países Bajos)], [Plataforma de gemelo digital con un proyecto demo 3-30-300 [2].], [Orientada a simulación y participación; la analítica de propuestas depende del modelador.],
   [*Davey* (EE. UU.)], [Servicio de consultoría con mapeo 3-30-300 e información de silvicultura urbana [3].], [Servicio manual/consultor, sin producto self-service ni ciclo de decisión auditado.],
@@ -75,7 +75,7 @@ Leyenda: círculo lleno = cubre de forma nativa · círculo claro = parcial o in
   [Google Tree Canopy / EIE], c("◐"), c("◐"), c("○"), c("○"), c("○"), c("◐"),
   [greehill + Civica], c("●"), c("●"), c("○"), c("◐"), c("○"), c("○"),
   [EarthDefine + PlanIT Geo], c("●"), c("◐"), c("○"), c("◐"), c("○"), c("○"),
-  table.cell(fill: azul-med)[*VerdeScope (objetivo)*], table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)),
+  table.cell(fill: azul-med)[*GreenScope (objetivo)*], table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)), table.cell(fill: azul-med, cap(2)),
 ))
 #estimado[Valoración cualitativa propia; sujeta a revisión con demos y pruebas de los productos.]
 
@@ -103,7 +103,7 @@ Leyenda: círculo lleno = cubre de forma nativa · círculo claro = parcial o in
         punto(0.50, 0.40, [Tygron], col: azul-med)
         punto(0.56, 0.64, [greehill + Civica], col: azul-med)
         punto(0.38, 0.14, [EarthDefine + PlanIT], col: azul-med)
-        punto(0.86, 0.86, [*VerdeScope*], col: critico, dx: -52pt)
+        punto(0.86, 0.86, [*GreenScope*], col: critico, dx: -52pt)
       })
     })
   },
@@ -113,7 +113,7 @@ Leyenda: círculo lleno = cubre de forma nativa · círculo claro = parcial o in
 == Gap de mercado
 
 #decision[
-  *Hueco identificado.* Ninguna solución analizada integra a la vez: _(a)_ detección a nivel de manzana, _(b)_ vigilancia temporal del verde, _(c)_ propuestas de intervención priorizadas y explicadas, _(d)_ decisión humana auditada guiada por umbrales y _(e)_ demanda real a partir de movilidad agregada. VerdeScope se diseña como producto de _apoyo a la decisión_ —no de automatización total— para el técnico municipal.
+  *Hueco identificado.* Ninguna solución analizada integra a la vez: _(a)_ detección a nivel de manzana, _(b)_ vigilancia temporal del verde, _(c)_ propuestas de intervención priorizadas y explicadas, _(d)_ decisión humana auditada guiada por umbrales y _(e)_ demanda real a partir de movilidad agregada. GreenScope se diseña como producto de _apoyo a la decisión_ —no de automatización total— para el técnico municipal.
 ]
 
 La ventaja diferencial propuesta es integrar *datos de movilidad de operador*, anonimizados y agregados, como los que comercializa Telefónica Tech con *Smart Steps*. #dato[Telefónica Tech aplica Smart Steps en proyectos municipales, p. ej. con el Ayuntamiento de Xàtiva (nota de prensa, 2025) [10].] Esa señal permite estimar *población flotante diurna* (quién usa realmente cada zona), que ni el padrón ni la imagen satelital capturan.
@@ -122,7 +122,7 @@ La ventaja diferencial propuesta es integrar *datos de movilidad de operador*, a
 
 #tabla(
   columns: (1.1fr, 1.5fr, 1.5fr),
-  [Línea], [Resultado relevante], [Implicación para VerdeScope],
+  [Línea], [Resultado relevante], [Implicación para GreenScope],
   [Segmentación en Sentinel-2 (U-Net, ResNet)], [Modelo híbrido U-Net + ResNet-50 en 16 ciudades: ≈ 90 % de acierto identificando espacios verdes, pero *fallos en parches pequeños* [8].], [Los parques de bolsillo son justamente parches pequeños: combinar NDVI con OSM y catastro y reservar la imagen de muy alta resolución para validar.],
   [Park-NET], [U-Net y U-Net/ResNet-34 sobre Sentinel-2 para parques públicos: IoU medio de test ≈ 0,56 [9].], [Un IoU moderado aconseja usar la segmentación como _señal_ y no como verdad: de ahí el modelo de déficit con incertidumbre.],
   [CNN + active learning sobre street view (Nanjing, 2024)], [CNN + aprendizaje activo sobre imágenes de calle para identificar emplazamientos potenciales de parques de bolsillo [12].], [Respalda el *bucle de decisiones del técnico → etiquetas* como active learning.],
@@ -133,7 +133,7 @@ La ventaja diferencial propuesta es integrar *datos de movilidad de operador*, a
 )
 
 #nota[
-  Las cifras de U-Net/ResNet y Park-NET proceden de los trabajos citados ([8], [9]) y no son reproducciones propias. Los resultados de VerdeScope sobre datos sintéticos no son comparables con ellos (véase el documento 04).
+  Las cifras de U-Net/ResNet y Park-NET proceden de los trabajos citados ([8], [9]) y no son reproducciones propias. Los resultados de GreenScope sobre datos sintéticos no son comparables con ellos (véase el documento 04).
 ]
 
 #figura(

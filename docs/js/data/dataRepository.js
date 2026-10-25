@@ -31,7 +31,7 @@ export async function loadData() {
   try {
     return { ...(await loadFrom(PATHS.primary)), isSample: false };
   } catch (primaryError) {
-    console.warn('[VerdeScope] datos reales no disponibles, uso datos de ejemplo:', primaryError.message);
+    console.warn('[GreenScope] datos reales no disponibles, uso datos de ejemplo:', primaryError.message);
     return { ...(await loadFrom(PATHS.fallback)), isSample: true };
   }
 }

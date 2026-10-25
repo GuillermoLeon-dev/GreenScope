@@ -1,4 +1,4 @@
-#import "tema/verdescope.typ": *
+#import "tema/greenscope.typ": *
 #import "tema/diagramas.typ": *
 
 #show: documento.with(
@@ -9,7 +9,7 @@
 
 = Dos modos de despliegue
 
-VerdeScope se entrega en dos configuraciones con el mismo dominio: una *demo estática* sin coste de infraestructura (GitHub Pages) y una *plataforma productiva* multiusuario. La web detecta mediante `config.json` si hay API y elige el adaptador de decisiones correspondiente.
+GreenScope se entrega en dos configuraciones con el mismo dominio: una *demo estática* sin coste de infraestructura (GitHub Pages) y una *plataforma productiva* multiusuario. La web detecta mediante `config.json` si hay API y elige el adaptador de decisiones correspondiente.
 
 #tabla(
   columns: (auto, 1fr, 1fr),
